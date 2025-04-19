@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: weshigbee/orders-sluggish:latest
+        image: weshigbee/examples-super-orders:2.2
         ports:
         - containerPort: 3000
 ---
