@@ -17,7 +17,7 @@ spec:
     # scaleUp:
     # stabilizationWindowSeconds: 0 # default 0 for scale up
   minReplicas: 1  
-  maxReplicas: 12  
+  maxReplicas: 20  
   metrics:
   - type: Resource
     resource:
