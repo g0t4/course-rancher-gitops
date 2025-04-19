@@ -16,6 +16,11 @@ spec:
       containers:
       - name: web
         image: weshigbee/examples-super-orders:2.2
+        resources:
+          requests:
+            cpu: "500m" # == 1/2 vCPU (at least), so 60% of 500 = 300m is our scaling trigger
+          limits:
+            cpu: "1000m"
         ports:
         - containerPort: 3000
 ---
