@@ -1,0 +1,13 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: nested
+  namespace: fleet-default
+spec:
+  # branch: main
+  repo: https://github.com/rancher/fleet-examples
+  paths:
+    - single-cluster/helm
+  targetNamespace: nested
+  targets:
+    - clusterName: rke2-lan
